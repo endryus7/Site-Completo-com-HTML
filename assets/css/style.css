@@ -11,6 +11,8 @@ body {
     background-color: azure;
 }
 
+/* Header*/
+
 header {
     background-color: #FFF;
     width: 100%;
@@ -19,7 +21,6 @@ header {
     justify-content: space-around;
     align-items: center;
 }
-
 
 .logo img{
     max-width: 100px;
@@ -45,15 +46,75 @@ menu li:hover {
     transition: 0.3s;
 }
 
-.botao_consulta button{
+.botao_menu button{
     border: none;
     border-radius: 15px;
     background-color: #18D935;
-    padding: 1rem;
     color: rgb(167, 167, 167);
+    padding: 1rem;
+    text-transform: uppercase;
+    cursor: pointer;
 }
 
-.botao_consulta button span {
+.botao_menu button span {
     margin-right: 10px;
 }
+
+/* Main */
+
+.banner {
+    background-color: bisque;
+    width: 100%;
+    height: 600px;
+
+    background-image: url(../image/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner_content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+    gap: px;
+}
+
+.banner_text {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin-left: 1rem;
+    color: white;
+}
+
+.banner_text h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.banner_text .botao_container {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.botao_consulta {
+    border: none;
+    border-radius: 10px;
+    background-color: #18D935;
+    color: rgb(167, 167, 167);
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.botao_conheca {
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
 
